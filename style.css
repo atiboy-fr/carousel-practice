@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #ffe4c4;
+}
+
+.carousel-section {
+    padding: 1rem;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+    & p {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+}
+
+.mode {
+    width: 70px;
+    height: fit-content;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    outline: none;
+    background-color: #808080;
+}
+.onBtn {
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    padding: 5px;
+    border: none;
+    background-color: #ffff00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.offBtn {
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    background-color: #00000cf8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.images {
+    max-width: 100rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40rem;
+
+
+    display: flex;
+    /* align-items: center; */
+    margin-top: 1rem;
+    justify-content: center;
+
+    /* THIS creates the animation! */
+    transition: transform 1s;
+}
+
+.image > img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  
+    border: none;
+    background: burlywood;
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+}
+
+.next-btn {
+    right: 6%;
+    transform: translate(50%, -50%);
+}
+
+.prev-btn {
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
